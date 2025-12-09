@@ -3,5 +3,6 @@
 
  
 <p align="center">
-  <img src="https://raw.githubusercontent.com/viveksanagoudra/web-portfolio/main/public/profile.png" width="200" />
+  <img src="https://github.com/viveksanagoudra/web-portfolio/blob/main/public/webscreenshot1.png" width="200" />
+  <img src="https://github.com/viveksanagoudra/web-portfolio/blob/main/public/webscreenshot1.png" width="200" />
 </p>
