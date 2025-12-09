@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/">Vivek Sanagoudra</a>
+        <nav>
+            <a target="_blank" href="https://github.com/viveksanagoudra"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/vivek-sanagoudra/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Namaste! I'm Vivek...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A AIML Engineer by qualification, and a software developer by trade. Based in Bengaluru, I love to
+                walk, play video games, and build out all sorts of fun and useful internet applications!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:viveksanagoudra@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/viveksanagoudra">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/vivek-sanagoudra/">LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Languages</td>
+                        <td>Python | SQL | Java | JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Front-End</td>
+                        <td>HTML5 | CSS3 | React</td>
+                    </tr>
+                    <tr>
+                        <td>Back-End</td>
+                        <td>Flask | Spring Boot | Puter.js | Node.js
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Canvas | Pixlr | Microsoft Paint</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Proficiencies</td>
+                        <td>OOPs | DSA | DBMS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Lastest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>Nov 19, 2025</p>
+                        <h4>Resumind(AI-Resume Analyzer)</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Puter.js</p>
+                            </div>
+                        </div>
+                        <p>It's an AI Resume Analyzer built with React that analyzes resumes and gives improvement suggestions.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://ai-resume-analyzer12.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/viveksanagoudra/ai-resume-analyzer">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src=""
+                            alt="AceResume-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>jan 24, 2025</p>
+                        <h4>Industrial PPE Detection System</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Python</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Yolo v8</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Flask</p>
+                            </div>
+                        </div>
+                        <p>Real time Industrial Personal Protective Equipment Detection System
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://viveksanagoudra.github.io/PPE_Detection_Using_Yolo/">Live</a>
+                            <a target="_blank" href="https://github.com/viveksanagoudra/PPE_Detection_Using_Yolo">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/smolstore.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>July 15, 2023</p>
+                        <h4>Expenny | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Track all your subscription analytics!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://sub-tracker.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/jamezmca/4_expenny">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://www.smoljames.com" target="_blank">Smoljames</a> ⭐️ the repo on <a target="_blank"
+                href="">GitHub</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for our little color switching game
+
+        // 1. select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the functions 
+
+        function playGame() {
+            // this function enables the play of the game by showing the color selector input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the users selected color on the input, and assign it to be the background color of the website
+            body.style.background = colorInput.value
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
+</body>
+
+</html>
